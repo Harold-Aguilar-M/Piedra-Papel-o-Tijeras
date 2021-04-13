@@ -1,0 +1,25 @@
+extends index.pug
+
+block content
+    .c-main#c-main
+        h1.title= title
+        button.btn-start#btn-start Start Game
+    .c-game-board#c-game-board(style="display: none;")
+        .header
+        .score-one Player 1
+        .score-two Player 2
+        .marker-one 0
+        .marker-two 0
+        .text 
+        .board-one
+            span.tooltip
+                img#btn-rock(src="/img/R_0.png", alt="", Width="100px")
+                span.tooltip-text Rock
+            span.tooltip
+                img#btn-paper(src="/img/P_0.png", alt="", Width="100px")
+                span.tooltip-text Paper
+            span.tooltip
+                img#btn-scissors(src="/img/S_0.png", alt="", Width="100px")
+                span.tooltip-text Scissors
+        .board-two
+            img#player-two(src="/img/S_1.png", alt="", srcset="")
